@@ -1,6 +1,5 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
 from LocatorPage.locator_page import LoginLocators
 
 
@@ -8,7 +7,7 @@ class LoginPage:
     def __init__(self,driver):
         self.driver = driver
 
-    def open_URL(self, url):
+    def open_login_page(self, url):
         self.driver.get(url)
 
     def username(self, username):
