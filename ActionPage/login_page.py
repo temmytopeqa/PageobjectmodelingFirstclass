@@ -18,9 +18,8 @@ class LoginPage:
         enter_password = WebDriverWait(self.driver,20).until(EC.presence_of_element_located(LoginLocators.PASSWORD))
         enter_password.send_keys(password)
 
-    def login(self):
-        click_button = WebDriverWait(self.driver,20).until(EC.presence_of_element_located(LoginLocators.LOGIN))
-        click_button.send_keys()
-
+    def click_button(self):
+        click_button = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(LoginLocators.LOGIN))
+        click_button.click()
 
 
